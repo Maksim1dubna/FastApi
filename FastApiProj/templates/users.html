@@ -10,7 +10,7 @@
             <br>
             <div class="User">
                 <ul class="list-group list-group-flush">
-                    {% from user in users %}
+                    {% for user in users %}
                     <li class="List-groupitem">{{user.id}} <a href="/user/{{user_id}}">{{user.username}}</a>
                     </li>
                     {% endfor %}
